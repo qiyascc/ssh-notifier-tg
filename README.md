@@ -1,3 +1,5 @@
+![Example](https://graph.org/file/56cfa1f212133a5f651e2.jpg)
+
 # SSH Notifier 
 
 ## What you need to do to make it work.
