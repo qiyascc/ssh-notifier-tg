@@ -25,10 +25,10 @@ bot.on('callback_query', (ctx) => {
           ctx.editMessageText(ctx.update.callback_query.message.text + "\n\nStatus: **deactive**", {parse_mode: 'Markdown'});
 
 
-          ctx.answerCbQuery("Oturum sonlandırıldı.");
+          ctx.answerCbQuery("Stopped.");
         });
       } else {
-        ctx.answerCbQuery("Aktif oturum bulunamadı.");
+        ctx.answerCbQuery("User not active.");
         ctx.editMessageText(ctx.update.callback_query.message.text + "\n\nStatus: **deactive**", {parse_mode: 'Markdown'});
 
 
