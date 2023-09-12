@@ -6,7 +6,7 @@ const bot = new Telegraf('token');
 bot.on('callback_query', (ctx) => {
   const callbackData = ctx.update.callback_query.data;
 
-  if (callbackData.startsWith("stop-mesajdaki-")) {
+  if (callbackData.startsWith("stop-")) {
     const user = callbackData.split("-")[2];
     exec(`ps aux | grep sshd`, (error, stdout, stderr) => {
       if (error) {
